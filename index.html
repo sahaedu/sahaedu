@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saha Institute Link Hub</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      font-family: "Poppins", sans-serif;
+      min-height: 100vh;
+    }
+    .hub-header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      color: #fff;
+    }
+    .hub-header h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .hub-header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+    .card {
+      border: none;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .icon-main { background: linear-gradient(135deg,#4e73df,#2e59d9); }
+    .icon-edu { background: linear-gradient(135deg,#1cc88a,#17a673); }
+    .icon-social { background: linear-gradient(135deg,#f39c12,#e67e22); }
+    .icon-admin { background: linear-gradient(135deg,#9b59b6,#8e44ad); }
+    .card-title {
+      font-weight: 600;
+      color: #222;
+    }
+    .btn-visit {
+      border-radius: 50px;
+      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      border: none;
+      color: #fff;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+    .btn-visit:hover {
+      background: linear-gradient(135deg, #2e59d9, #17a673);
+      color: #fff;
+    }
+    .form-control, textarea {
+      border-radius: 12px !important;
+      border: 1px solid #ddd;
+    }
+    .form-control:focus, textarea:focus {
+      border-color: #4e73df;
+      box-shadow: 0 0 8px rgba(78,115,223,0.4);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #eee;
+    }
+    /* Mobile adjustments */
+    @media (max-width: 576px) {
+      .hub-header h1 {
+        font-size: 1.8rem;
+      }
+      .btn-visit {
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="hub-header">
+    <h1>🌐 SAHA Institute</h1>
+    <p>All official pages in one beautiful, stylish hub</p>
+  </div>
+
+  <!-- Links Section -->
+  <div class="container pb-5">
+    <div class="row g-4">
+
+      <!-- Main Website -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-main"><i class="fas fa-globe"></i></div>
+          <h5 class="card-title">Main Website</h5>
+          <p class="card-text">Our primary portal for all official updates.</p>
+          <a href="https://sahaskillinstitute.com" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Second Website -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-edu"><i class="fas fa-university"></i></div>
+          <h5 class="card-title">Saha Education</h5>
+          <p class="card-text">Academic resources, programs, and updates.</p>
+          <a href="https://sahaedu.in" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Instagram -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-social"><i class="fab fa-instagram"></i></div>
+          <h5 class="card-title">Instagram</h5>
+          <p class="card-text">Follow us for campus life & student highlights.</p>
+          <a href="https://www.instagram.com/_saha_institute_" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-social"><i class="fab fa-facebook-f"></i></div>
+          <h5 class="card-title">Facebook</h5>
+          <p class="card-text">Stay updated with notices & events.</p>
+          <a href="#" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-social"><i class="fab fa-linkedin-in"></i></div>
+          <h5 class="card-title">LinkedIn</h5>
+          <p class="card-text">Professional network and placement updates.</p>
+          <a href="https://www.linkedin.com/in/saha-insitute-34a893374/" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- X (Twitter) -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-social"><i class="fab fa-x-twitter"></i></div>
+          <h5 class="card-title">X (Twitter)</h5>
+          <p class="card-text">Latest announcements and quick updates.</p>
+          <a href="https://x.com/SIMT1994" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Admin Portal -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-admin"><i class="fas fa-user-shield"></i></div>
+          <h5 class="card-title">Admin Portal</h5>
+          <p class="card-text">Admin access to manage institute resources.</p>
+          <a href="https://sahil.sahaedu.in" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Aalekh Portal -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card text-center p-4 h-100">
+          <div class="icon-circle icon-admin"><i class="fas fa-file-alt"></i></div>
+          <h5 class="card-title">Aalekh Portal</h5>
+          <p class="card-text">Access to Aalekh resources & tools.</p>
+          <a href="https://aalekh.sahaedu.in" target="_blank" class="btn btn-visit w-100">
+            Visit <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback & Complaint Forms -->
+    <div class="row mt-5 g-4">
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="card-title mb-3"><i class="fas fa-comment-dots me-2 text-primary"></i>Feedback Form</h5>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Feedback"></textarea>
+            </div>
+            <button type="submit" class="btn btn-visit w-100">Submit Feedback</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-4 h-100">
+          <h5 class="card-title mb-3"><i class="fas fa-exclamation-triangle me-2 text-danger"></i>Complaint Form</h5>
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Complaint"></textarea>
+            </div>
+            <button type="submit" class="btn btn-visit w-100">Submit Complaint</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 SAHA Institute — All Rights Reserved
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
